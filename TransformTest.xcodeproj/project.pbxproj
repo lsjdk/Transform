@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5632C0842751C8B800D87ADB /* AnchorPointViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5632C0832751C8B800D87ADB /* AnchorPointViewController.swift */; };
 		56934C3027508F7600474D34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56934C2F27508F7600474D34 /* AppDelegate.swift */; };
 		56934C3227508F7600474D34 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56934C3127508F7600474D34 /* SceneDelegate.swift */; };
 		56934C3427508F7600474D34 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56934C3327508F7600474D34 /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5632C0832751C8B800D87ADB /* AnchorPointViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorPointViewController.swift; sourceTree = "<group>"; };
 		56934C2C27508F7600474D34 /* TransformTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransformTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56934C2F27508F7600474D34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56934C3127508F7600474D34 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +78,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5632C0822751C8A000D87ADB /* AnchorPoint */ = {
+			isa = PBXGroup;
+			children = (
+				5632C0832751C8B800D87ADB /* AnchorPointViewController.swift */,
+			);
+			path = AnchorPoint;
+			sourceTree = "<group>";
+		};
 		56934C2327508F7600474D34 = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +112,7 @@
 				56934C2F27508F7600474D34 /* AppDelegate.swift */,
 				56934C3127508F7600474D34 /* SceneDelegate.swift */,
 				56934C3327508F7600474D34 /* ViewController.swift */,
+				5632C0822751C8A000D87ADB /* AnchorPoint */,
 				56934C3527508F7600474D34 /* Main.storyboard */,
 				56934C3827508F7800474D34 /* Assets.xcassets */,
 				56934C3A27508F7800474D34 /* LaunchScreen.storyboard */,
@@ -260,6 +271,7 @@
 			files = (
 				56934C3427508F7600474D34 /* ViewController.swift in Sources */,
 				56934C3027508F7600474D34 /* AppDelegate.swift in Sources */,
+				5632C0842751C8B800D87ADB /* AnchorPointViewController.swift in Sources */,
 				56934C3227508F7600474D34 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
