@@ -1,7 +1,7 @@
 # Transform
 
 
-//缩放或旋转默认都是围绕视图的中心点来进行的，通过 AnchorPoint 的设定，可以改变缩放或旋转围绕的点，下面是修改方法。
+1.缩放或旋转默认都是围绕视图的中心点来进行的，通过 AnchorPoint 的设定，可以改变缩放或旋转围绕的点，下面是修改方法。
 
     /// Set the point around which zoom or rotate
     /// - Parameters:
