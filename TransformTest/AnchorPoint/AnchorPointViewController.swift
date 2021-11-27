@@ -64,6 +64,9 @@ class AnchorPointViewController: UIViewController {
         return slider
     }()
     
+    
+    var bounds: CGRect = .zero
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -86,12 +89,15 @@ class AnchorPointViewController: UIViewController {
         self.setAnchorPoint(point: CGPoint.init(x: 1, y: 0), view: self.three)
         print("-=-=-123=-=-=\(self.three.frame)")
         
+        self.bounds = self.three.bounds
     }
 
     @objc private func sliderValueChanged() {
-        self.setAnchorPoint(point: CGPoint.init(x: 1, y: 0), view: self.three)
+        self.setAnchorPoint(point: CGPoint.init(x: 1, y: 1), view: self.three)
         
-        self.three.transform = self.three.transform.scaledBy(x: self.volumeSlider.value > 0 ? 1.1 : 0.9, y: self.volumeSlider.value > 0 ? 1.1 : 0.9)
+//        self.three.transform = self.three.transform.scaledBy(x: self.volumeSlider.value > 0 ? 1.1 : 0.9, y: self.volumeSlider.value > 0 ? 1.1 : 0.9)
+        
+        self.three.bounds = CGRect.init(x: 0, y: 0, width: self.bounds.size.width - CGFloat(self.volumeSlider.value * 50), height: self.bounds.size.height - CGFloat(self.volumeSlider.value * 50))
         
         let r = self.three.convert(CGPoint.init(x: self.three.bounds.size.width, y: 0), to: self.view)
         self.five.center = r
