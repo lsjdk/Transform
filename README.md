@@ -17,6 +17,6 @@
     }
 
 2.改变控件的大小，下面两个方式效果是一样的
-//        self.three.transform = self.three.transform.scaledBy(x: self.volumeSlider.value > 0 ? 1.1 : 0.9, y: self.volumeSlider.value > 0 ? 1.1 : 0.9)
-        
-        self.three.bounds = CGRect.init(x: 0, y: 0, width: self.bounds.size.width - CGFloat(self.volumeSlider.value * 50), height: self.bounds.size.height - CGFloat(self.volumeSlider.value * 50))
+
+     ///   self.three.transform = self.three.transform.scaledBy(x: self.volumeSlider.value > 0 ? 1.1 : 0.9, y: self.volumeSlider.value > 0 ? 1.1 : 0.9)
+     self.three.bounds = CGRect.init(x: 0, y: 0, width: self.bounds.size.width - CGFloat(self.volumeSlider.value * 50), height: self.bounds.size.height - CGFloat(self.volumeSlider.value * 50))
